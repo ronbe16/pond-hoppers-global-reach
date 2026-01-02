@@ -35,7 +35,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-navy text-lightGrey">
+    <footer className="bg-cream text-darkGrey">
       <div className="container-brand py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Column 1 - Logo & Social */}
@@ -43,9 +43,9 @@ const Footer = () => {
             <img
               src={MainLogo}
               alt="Pond Hoppers International Movers"
-              className="w-[140px] h-auto mx-auto md:mx-0"
+              className="w-[125px] h-auto mx-auto md:mx-0"
             />
-            <p className="mt-4 text-[13px] text-lightGrey/80">
+            <p className="mt-4 text-[13px] text-darkGrey/70">
               International Movers
             </p>
             <div className="flex gap-4 mt-6 justify-center md:justify-start">
@@ -53,7 +53,7 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="text-primary-foreground hover:text-accent transition-smooth"
+                  className="text-navy hover:text-accent transition-smooth"
                   aria-label={social.label}
                 >
                   <social.icon size={22} />
@@ -64,7 +64,7 @@ const Footer = () => {
 
           {/* Column 2 - Quick Links */}
           <div className="text-center md:text-left">
-            <h4 className="font-sans font-bold text-sm text-primary-foreground uppercase tracking-wider mb-5">
+            <h4 className="font-sans font-bold text-sm text-navy uppercase tracking-wider mb-5">
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -72,7 +72,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-[13px] text-lightGrey/80 hover:text-accent transition-smooth"
+                    className="text-[13px] text-darkGrey hover:text-accent transition-smooth"
                   >
                     {link.name}
                   </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
 
           {/* Column 3 - Services */}
           <div className="text-center md:text-left">
-            <h4 className="font-sans font-bold text-sm text-primary-foreground uppercase tracking-wider mb-5">
+            <h4 className="font-sans font-bold text-sm text-navy uppercase tracking-wider mb-5">
               Services
             </h4>
             <ul className="space-y-3">
@@ -91,7 +91,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-[13px] text-lightGrey/80 hover:text-accent transition-smooth"
+                    className="text-[13px] text-darkGrey hover:text-accent transition-smooth"
                   >
                     {link.name}
                   </Link>
@@ -102,22 +102,22 @@ const Footer = () => {
 
           {/* Column 4 - Contact */}
           <div className="text-center md:text-left">
-            <h4 className="font-sans font-bold text-sm text-primary-foreground uppercase tracking-wider mb-5">
+            <h4 className="font-sans font-bold text-sm text-navy uppercase tracking-wider mb-5">
               Contact
             </h4>
             <ul className="space-y-4">
               {contactInfo.map((item, index) => (
                 <li key={index} className="flex items-start gap-3 justify-center md:justify-start">
-                  <item.icon size={16} className="text-primary-foreground mt-0.5 flex-shrink-0" />
+                  <item.icon size={16} className="text-navy mt-0.5 flex-shrink-0" />
                   {item.href ? (
                     <a
                       href={item.href}
-                      className="text-[13px] text-lightGrey/80 hover:text-accent transition-smooth"
+                      className="text-[13px] text-darkGrey hover:text-accent transition-smooth"
                     >
                       {item.text}
                     </a>
                   ) : (
-                    <span className="text-[13px] text-lightGrey/80">{item.text}</span>
+                    <span className="text-[13px] text-darkGrey">{item.text}</span>
                   )}
                 </li>
               ))}
@@ -127,12 +127,12 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-primary-foreground/10">
+      <div className="border-t border-navy/10">
         <div className="container-brand py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[11px] text-lightGrey/60">
+          <p className="text-[11px] text-darkGrey/70">
             © 2025 Pond Hoppers International Movers. All rights reserved.
           </p>
-          <div className="flex gap-2 text-[11px] text-lightGrey/60">
+          <div className="flex gap-2 text-[11px] text-darkGrey/70">
             <Link to="/privacy" className="hover:text-accent transition-smooth">
               Privacy Policy
             </Link>
