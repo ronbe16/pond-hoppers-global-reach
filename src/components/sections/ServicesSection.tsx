@@ -29,13 +29,8 @@ const ServicesSection = () => {
   return (
     <section className="bg-background section-padding">
       <div className="container-brand">
-        {/* Eyebrow */}
-        <p className="font-sans text-sm text-darkGrey text-center max-w-2xl mx-auto mb-7">
-          Comprehensive moving solutions designed to cover every aspect of your international relocation
-        </p>
-
         {/* Header Row */}
-        <div className="flex flex-col sm:flex-row justify-between items-center mb-12">
+        <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
           <h2 className="heading-md text-navy mb-4 sm:mb-0">Our Services</h2>
           <Link
             to="/services"
@@ -44,6 +39,11 @@ const ServicesSection = () => {
             View All Services <ArrowRight size={16} />
           </Link>
         </div>
+
+        {/* Eyebrow Text */}
+        <p className="font-sans text-sm text-darkGrey text-center max-w-[720px] mx-auto mb-12">
+          Comprehensive moving solutions designed to cover every aspect of your international relocation
+        </p>
 
         {/* Service Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
