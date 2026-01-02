@@ -27,7 +27,10 @@ const TestimonialsSection = () => {
   return (
     <section className="bg-background section-padding">
       <div className="container-brand">
-        <h2 className="heading-md text-navy text-center mb-14">Happy Families</h2>
+        <h2 className="heading-md text-navy text-center mb-6">What People Say</h2>
+        <p className="font-sans text-sm text-darkGrey text-center max-w-[720px] mx-auto mb-12">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
           {testimonials.map((testimonial, index) => (

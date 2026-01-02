@@ -29,16 +29,8 @@ const ServicesSection = () => {
   return (
     <section className="bg-background section-padding">
       <div className="container-brand">
-        {/* Header Row */}
-        <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-          <h2 className="heading-md text-navy mb-4 sm:mb-0">Our Services</h2>
-          <Link
-            to="/services"
-            className="font-sans font-medium text-sm text-accent hover:underline transition-smooth inline-flex items-center gap-1"
-          >
-            View All Services <ArrowRight size={16} />
-          </Link>
-        </div>
+        {/* Header */}
+        <h2 className="heading-md text-navy text-center mb-6">Our Services</h2>
 
         {/* Eyebrow Text */}
         <p className="font-sans text-sm text-darkGrey text-center max-w-[720px] mx-auto mb-12">
