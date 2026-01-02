@@ -343,41 +343,40 @@ const Destinations = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4">
+            <div className="max-w-[800px] mx-auto">
               {timeline.map((step, index) => (
-                <div key={index} className="relative">
-                  {/* Connector line (desktop only) */}
-                  {index < timeline.length - 1 && (
-                    <div className="hidden lg:block absolute top-7 left-[calc(50%+28px)] w-[calc(100%-28px)] border-t-2 border-dashed border-accent/40" />
-                  )}
+                <div 
+                  key={index} 
+                  className={`flex items-start gap-6 ${index < timeline.length - 1 ? 'mb-10' : ''}`}
+                >
+                  {/* Number Circle */}
+                  <div className="w-[60px] h-[60px] bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="font-serif font-bold text-[28px] text-accent-foreground">
+                      {step.number}
+                    </span>
+                  </div>
                   
-                  <div className="bg-card p-6 rounded-[10px] shadow-[var(--shadow-md)] text-center lg:text-left">
-                    {/* Number Circle */}
-                    <div className="w-14 h-14 bg-accent rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-4">
-                      <span className="font-serif font-bold text-[28px] text-accent-foreground">
-                        {step.number}
-                      </span>
-                    </div>
-                    
+                  {/* Content Card */}
+                  <div className="flex-1 bg-card border-l-4 border-accent py-6 pr-6 pl-7 rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
                     {/* Timeframe */}
-                    <span className="font-sans font-bold text-sm text-accent uppercase tracking-wide block mb-2">
+                    <span className="font-sans font-bold text-xs text-accent uppercase tracking-wider block mb-2">
                       {step.timeframe}
                     </span>
                     
                     {/* Title */}
-                    <h3 className="font-serif font-bold text-xl text-primary mb-2">
+                    <h3 className="font-serif font-bold text-[22px] text-primary mb-2">
                       {step.title}
                     </h3>
                     
                     {/* Description */}
-                    <p className="font-sans text-sm text-foreground mb-4">
+                    <p className="font-sans text-[15px] text-foreground mb-4">
                       {step.description}
                     </p>
                     
                     {/* Checklist */}
                     <div className="space-y-2">
                       {step.checklist.map((item, idx) => (
-                        <div key={idx} className="flex items-center gap-2 justify-center lg:justify-start">
+                        <div key={idx} className="flex items-center gap-2">
                           <Check className="w-4 h-4 text-accent flex-shrink-0" />
                           <span className="font-sans text-[13px] text-foreground">{item}</span>
                         </div>
