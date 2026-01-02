@@ -45,9 +45,6 @@ const Footer = () => {
               alt="Pond Hoppers International Movers"
               className="w-[156px] h-auto mx-auto md:mx-0"
             />
-            <p className="mt-4 text-[13px] text-darkGrey/70">
-              International Movers
-            </p>
             <div className="flex gap-4 mt-6 justify-center md:justify-start">
               {socialLinks.map((social) => (
                 <a
