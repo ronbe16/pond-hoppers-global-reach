@@ -40,7 +40,7 @@ const Header = () => {
           <img
             src={MainLogo}
             alt="Pond Hoppers International Movers"
-            className="h-12 md:h-14 w-auto"
+            className="h-15 md:h-[70px] w-auto"
           />
         </Link>
 
