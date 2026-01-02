@@ -14,12 +14,14 @@ const CTASection = ({ headline, subtext, buttonText, buttonLink = "/contact" }: 
     <section className="relative bg-accent overflow-hidden">
       {/* Cityscape Background */}
       <div
-        className="absolute inset-x-0 bottom-0 h-32 md:h-40 opacity-20 pointer-events-none"
+        className="absolute inset-x-0 bottom-0 h-40 md:h-48 pointer-events-none"
         style={{
           backgroundImage: `url(${CityscapeOrange})`,
           backgroundPosition: "center bottom",
           backgroundRepeat: "repeat-x",
           backgroundSize: "auto 100%",
+          opacity: 0.35,
+          mixBlendMode: "multiply",
         }}
       />
 

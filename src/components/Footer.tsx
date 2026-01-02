@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock, Facebook, Linkedin, Instagram } from "lucide-react";
-import BlueLogo from "@/assets/logos/Pond_Hoppers_One_colour_logo_Blue_FINAL.png";
+import MainLogo from "@/assets/logos/Pond_Hoppers_Main_logo_FINAL.png";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -41,9 +41,9 @@ const Footer = () => {
           {/* Column 1 - Logo & Social */}
           <div className="text-center md:text-left">
             <img
-              src={BlueLogo}
+              src={MainLogo}
               alt="Pond Hoppers International Movers"
-              className="h-16 w-auto mx-auto md:mx-0"
+              className="w-[140px] h-auto mx-auto md:mx-0"
             />
             <p className="mt-4 text-[13px] text-lightGrey/80">
               International Movers
