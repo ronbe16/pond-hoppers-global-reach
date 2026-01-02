@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import HeroImage from "@/assets/images/hero-family-moving.jpg";
-import CityscapeWhite from "@/assets/graphics/Logo_cityscape_and_plane_White.png";
 
 const HeroSection = () => {
   return (
@@ -11,19 +10,8 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${HeroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-navy/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/60 via-navy/40 to-transparent" />
       </div>
-
-      {/* Cityscape Silhouette */}
-      <div
-        className="absolute inset-x-0 bottom-0 h-24 md:h-32 opacity-10 pointer-events-none"
-        style={{
-          backgroundImage: `url(${CityscapeWhite})`,
-          backgroundPosition: "center bottom",
-          backgroundRepeat: "repeat-x",
-          backgroundSize: "auto 100%",
-        }}
-      />
 
       {/* Content */}
       <div className="container-brand relative z-10 py-20 md:py-28">
