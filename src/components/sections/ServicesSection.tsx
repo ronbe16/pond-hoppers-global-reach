@@ -12,7 +12,7 @@ const services = [
     link: "/services",
   },
   {
-    title: "Corporate Relocations",
+    title: "Lumpsum Moves",
     description: "Efficient corporate transfer solutions that minimize downtime and ensure business continuity.",
     image: CorporateImage,
     link: "/services",

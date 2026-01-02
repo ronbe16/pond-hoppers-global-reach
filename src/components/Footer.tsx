@@ -13,7 +13,7 @@ const quickLinks = [
 
 const serviceLinks = [
   { name: "Household Moves", href: "/services" },
-  { name: "Corporate Relocations", href: "/services" },
+  { name: "Lumpsum Moves", href: "/services" },
   { name: "Storage Solutions", href: "/services" },
   { name: "Packing Services", href: "/services" },
   { name: "Pet Relocation", href: "/services" },
