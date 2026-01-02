@@ -42,7 +42,7 @@ const mainServices = [
   },
   {
     icon: Briefcase,
-    title: "Corporate Relocations",
+    title: "Lumpsum Moves",
     description: "Streamlined employee relocation programs that minimize downtime and ensure smooth transitions for your team. We coordinate every aspect of corporate moves with precision and care.",
     features: [
       "Dedicated relocation coordinator",
@@ -161,7 +161,7 @@ const testimonials = [
     initials: "SM"
   },
   {
-    quote: "We've used Pond Hoppers for three corporate relocations now. Their attention to detail and seamless coordination makes all the difference for our employees.",
+    quote: "We've used Pond Hoppers for three lumpsum moves now. Their attention to detail and seamless coordination makes all the difference for our employees.",
     name: "David Chen",
     location: "Tech Company, San Francisco",
     initials: "DC"
@@ -177,7 +177,7 @@ const testimonials = [
 const faqs = [
   {
     question: "How far in advance should I book my international move?",
-    answer: "We recommend booking 6-8 weeks in advance for household moves and 8-12 weeks for corporate relocations. This allows time for proper planning, documentation, and scheduling. However, we can accommodate shorter timelines when needed."
+    answer: "We recommend booking 6-8 weeks in advance for household moves and 8-12 weeks for lumpsum moves. This allows time for proper planning, documentation, and scheduling. However, we can accommodate shorter timelines when needed."
   },
   {
     question: "What items cannot be shipped internationally?",

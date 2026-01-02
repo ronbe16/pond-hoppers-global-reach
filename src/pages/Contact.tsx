@@ -418,7 +418,7 @@ const Contact = () => {
                               </SelectTrigger>
                               <SelectContent className="bg-card border-border">
                                 <SelectItem value="household">Household Move</SelectItem>
-                                <SelectItem value="corporate">Corporate Relocation</SelectItem>
+                                <SelectItem value="corporate">Lumpsum Move</SelectItem>
                                 <SelectItem value="storage">Storage Only</SelectItem>
                                 <SelectItem value="packing">Packing Services</SelectItem>
                                 <SelectItem value="other">Other</SelectItem>
