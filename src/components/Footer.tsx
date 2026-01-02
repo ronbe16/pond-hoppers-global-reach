@@ -43,7 +43,7 @@ const Footer = () => {
             <img
               src={MainLogo}
               alt="Pond Hoppers International Movers"
-              className="w-[125px] h-auto mx-auto md:mx-0"
+              className="w-[156px] h-auto mx-auto md:mx-0"
             />
             <p className="mt-4 text-[13px] text-darkGrey/70">
               International Movers
