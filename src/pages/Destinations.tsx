@@ -77,11 +77,20 @@ const destinations = [
   {
     id: "uae",
     flag: "🇦🇪",
-    name: "United Arab Emirates",
+    name: "UAE",
     image: destinationUAE,
     description: "Build your future in the Middle East's most dynamic region. The UAE offers tax-free living, modern amenities, and a unique blend of traditional and contemporary culture.",
     highlights: ["Tax-free income", "Luxury lifestyle", "Growing economy"],
     link: "/destinations/uae"
+  },
+  {
+    id: "spain",
+    flag: "🇪🇸",
+    name: "Spain",
+    image: destinationUAE, // Placeholder - using UAE image temporarily
+    description: "Embrace the Mediterranean lifestyle in a country famous for its rich culture, delicious cuisine, and warm climate. Spain offers an excellent quality of life and welcoming communities.",
+    highlights: ["Mediterranean lifestyle", "Affordable living", "Rich culture & history"],
+    link: "/destinations/spain"
   }
 ];
 
@@ -147,7 +156,6 @@ const timeline = [
 
 const resources = [
   { icon: Download, title: "Moving Checklist", text: "Download our comprehensive checklist", link: "Download PDF" },
-  { icon: Calculator, title: "Cost Calculator", text: "Estimate your moving costs", link: "Try Calculator" },
   { icon: BookOpen, title: "Expat Blog", text: "Read stories and tips from expats", link: "Read Blog" },
   { icon: MessageCircle, title: "Ask an Expert", text: "Get personalized moving advice", link: "Contact Us" }
 ];
