@@ -36,6 +36,7 @@ import destinationAustralia from "@/assets/images/destination-australia.jpg";
 import destinationCanada from "@/assets/images/destination-canada.jpg";
 import destinationSingapore from "@/assets/images/destination-singapore.jpg";
 import destinationUAE from "@/assets/images/destination-uae.jpg";
+import destinationSpain from "@/assets/images/destination-spain.jpg";
 
 const destinations = [
   {
@@ -87,7 +88,7 @@ const destinations = [
     id: "spain",
     flag: "🇪🇸",
     name: "Spain",
-    image: destinationUAE, // Placeholder - using UAE image temporarily
+    image: destinationSpain,
     description: "Embrace the Mediterranean lifestyle in a country famous for its rich culture, delicious cuisine, and warm climate. Spain offers an excellent quality of life and welcoming communities.",
     highlights: ["Mediterranean lifestyle", "Affordable living", "Rich culture & history"],
     link: "/destinations/spain"
