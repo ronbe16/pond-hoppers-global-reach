@@ -185,32 +185,3 @@
     @apply transition-transform duration-300 hover:-translate-y-1.5;
   }
 }
-
-/* Hero Blob Animations */
-@keyframes morphBlob1 {
-  0%, 100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
-  50% { border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%; }
-}
-
-@keyframes morphBlob2 {
-  0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
-}
-
-@keyframes morphBlob3 {
-  0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-  33% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
-  66% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
-}
-
-.animate-morph-blob-1 {
-  animation: morphBlob1 20s infinite ease-in-out;
-}
-
-.animate-morph-blob-2 {
-  animation: morphBlob2 18s infinite ease-in-out;
-}
-
-.animate-morph-blob-3 {
-  animation: morphBlob3 22s infinite ease-in-out;
-}
