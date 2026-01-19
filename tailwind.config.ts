@@ -107,12 +107,28 @@ export default {
           from: { opacity: "0" },
           to: { opacity: "1" },
         },
+        "morph-blob-1": {
+          "0%, 100%": { borderRadius: "40% 60% 70% 30% / 40% 50% 60% 50%" },
+          "50%": { borderRadius: "60% 40% 30% 70% / 50% 60% 40% 50%" },
+        },
+        "morph-blob-2": {
+          "0%, 100%": { borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%" },
+          "50%": { borderRadius: "30% 60% 70% 40% / 50% 60% 30% 60%" },
+        },
+        "morph-blob-3": {
+          "0%, 100%": { borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" },
+          "33%": { borderRadius: "58% 42% 75% 25% / 76% 46% 54% 24%" },
+          "66%": { borderRadius: "50% 50% 33% 67% / 55% 27% 73% 45%" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in-up": "fade-in-up 0.6s ease-out forwards",
         "fade-in": "fade-in 0.4s ease-out forwards",
+        "morph-blob-1": "morph-blob-1 20s ease-in-out infinite",
+        "morph-blob-2": "morph-blob-2 18s ease-in-out infinite",
+        "morph-blob-3": "morph-blob-3 22s ease-in-out infinite",
       },
     },
   },
