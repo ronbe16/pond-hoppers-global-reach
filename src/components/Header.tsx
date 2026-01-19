@@ -34,13 +34,13 @@ const Header = () => {
         isScrolled ? "bg-background shadow-brand-sm" : "bg-background"
       }`}
     >
-      <nav className="container-brand flex items-center justify-between py-4">
+      <nav className="container-brand flex items-center justify-between py-6">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
           <img
             src={MainLogo}
             alt="Pond Hoppers International Movers"
-            className="h-[75px] md:h-[88px] w-auto"
+            className="h-[112px] md:h-[132px] w-auto"
           />
         </Link>
 
