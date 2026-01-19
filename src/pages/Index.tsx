@@ -5,6 +5,7 @@ import WhyChooseUsSection from "@/components/sections/WhyChooseUsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/CTASection";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
         <ServicesSection />
         <HowItWorksSection />
         <TestimonialsSection />
+        <FAQSection />
         <CTASection
           headline="Ready to Start Your Journey?"
           subtext="Let us take the stress out of your move. Contact us today for a personalized quote and expert advice."
