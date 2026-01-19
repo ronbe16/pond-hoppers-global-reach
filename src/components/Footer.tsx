@@ -43,9 +43,9 @@ const Footer = () => {
             <img
               src={MainLogo}
               alt="Pond Hoppers International Movers"
-              className="w-[195px] h-auto mx-auto md:mx-0"
+              className="w-[293px] h-auto mx-auto md:mx-0"
             />
-            <div className="flex gap-4 mt-6 justify-center md:justify-start">
+            <div className="flex gap-5 mt-8 justify-center md:justify-start">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
