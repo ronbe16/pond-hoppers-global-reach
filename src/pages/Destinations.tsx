@@ -77,7 +77,8 @@ const destinations = [
   {
     id: "uae",
     flag: "🇦🇪",
-    name: "UAE",
+    abbreviation: "UAE",
+    name: "United Arab Emirates",
     image: destinationUAE,
     description: "Build your future in the Middle East's most dynamic region. The UAE offers tax-free living, modern amenities, and a unique blend of traditional and contemporary culture.",
     highlights: ["Tax-free income", "Luxury lifestyle", "Growing economy"],
@@ -291,7 +292,12 @@ const Destinations = () => {
                   
                   {/* Content */}
                   <div className="p-5 md:p-7">
-                    <span className="text-[40px] block mb-4">{destination.flag}</span>
+                    <span className="text-[40px] block mb-2">{destination.flag}</span>
+                    {destination.abbreviation && (
+                      <span className="font-sans font-semibold text-sm text-accent uppercase tracking-wide block mb-2">
+                        {destination.abbreviation}
+                      </span>
+                    )}
                     <h3 className="font-serif font-bold text-[24px] md:text-[26px] text-primary mb-3">
                       {destination.name}
                     </h3>
@@ -442,7 +448,7 @@ const Destinations = () => {
               <h2 className="heading-lg text-primary">Additional Moving Resources</h2>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {resources.map((resource, index) => (
                 <div 
                   key={index}
